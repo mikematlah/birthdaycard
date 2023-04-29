@@ -1,0 +1,226 @@
+body{
+    text-align: center;
+    font-family: 'Happy Monkey',Tahoma,sans-serif;
+    background:linear-gradient(#a2d2ff, #EFB0C9);
+    color:white;
+    padding:.2em;
+   
+   
+  
+  
+    
+   
+}
+  /*carousel*/
+  .carousel{
+    margin:0 auto;
+    margin-top: 0px;
+    position: relative;
+    max-width: 250px;
+    width: 250px;
+    border-radius: 50%;
+    
+    
+  }
+ 
+  .carousel-logo{
+ 
+    max-width: 600px;
+    width: 600px;
+    margin:0 auto;
+    margin-top: 30px;
+  }
+  .carousel .carousel-item
+  {
+ 
+     display:none;
+    
+  }
+ 
+  .carousel .carousel-item-visible{
+ 
+     display:block;
+     animation: fadeVisibility 0.5s;
+     
+  }
+ 
+  .carousel .carousel-item img{
+ 
+        border-radius: 50%;
+        border:3px solid pink;
+        max-width:250px;
+        object-fit: cover;
+      
+ 
+  }
+  
+ 
+  .carousel .carousel-actions{
+     display:flex;
+     width:100%;
+     justify-content: space-between;
+     position: absolute;
+     top:50%;
+     transform: translateY(-50%);
+  }
+ .carousel .carousel-actions button{
+   
+     border-radius:50px;
+     background-color:white;
+     opacity: .5;
+     border:none;
+     font-size:16px;
+     font-weight: bold;
+     cursor:pointer;
+     width: 20px;
+     height:20px;
+ 
+ }
+ .carousel ul{
+    list-style: none;
+    position:absolute;
+    display: flex;
+    padding:0;
+    margin:0;
+    left:50%;
+    bottom: -30px;
+    transform: translate(-50%);
+ 
+ }
+ .carousel ul li {
+    width: 5px;
+    height: 5px;
+    background:black;
+    opacity: .5;
+    border: 2px solid black;
+    border-radius: 50px;
+    margin: 10px;
+    cursor: pointer;
+  }
+  .carousel ul li.selected {
+    background: transparent;
+  }
+ 
+ 
+ .carousel .carousel-actions button#carousel-button-prev{
+ 
+     margin-left:10px;
+ }
+ .carousel .carousel-actions button#carousel-button-next{
+ 
+     margin-right:10px;
+ }
+ #carousel-button-prev,
+ #carousel-button-next{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 20px;
+    width: 20px;
+ }
+ @keyframes fadeVisibility{
+ 
+    0%{
+       opacity: 0;
+    }
+    100%{
+       opacity: 1;
+    }
+ 
+ }
+ .header{
+    text-align: center;
+    padding-top: 1em;
+    margin-bottom:1em;
+ }
+ h1,h2,h3,h4,p{
+    text-shadow: 0 0 10px black;
+    font-family: inherit;
+  
+}
+#photo{
+    width:200px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 50%;
+    border:5px solid #EFB0C9;
+    margin-bottom: 10px;
+}
+#bday-age{
+    background-color:#EFB0C9;
+    padding:5px 10px;
+    border-radius: 5px;
+    margin:5px 0 10px 0;
+}
+
+
+#bday-date{
+    background-color:#EFB0C9;
+    padding:5px 10px;
+    border-radius: 5px;
+    margin:0;
+}
+#header{
+    display:flex;
+    justify-content: center;
+   
+}
+
+.gift-section{
+    margin-top:50px;
+}
+.gift-hint{
+    margin-top:0;
+}
+.gift-title{
+    margin-bottom:10px;
+}
+.gift-img{
+    width:90%;
+    min-height:50%;
+
+    background-image: url('./images/gift-cover.jpg');
+    background-size: cover;
+    margin:0 auto;
+    border:5px solid white;
+    border-radius: 10px;
+}
+#happy:hover{
+    background-image: url('./images/happy.gif');
+    background-size: cover;
+}
+#career:hover{
+    background-image: url('https://media3.giphy.com/media/3o6gDWzmAzrpi5DQU8/giphy.gif?cid=ecf05e475nj2vqnjped1pddb6p9zoxu3cux0mt2qe7tzzb36&rid=giphy.gif&ct=g');
+    background-size: cover;
+}
+#family:hover{
+    background-image: url('https://media1.giphy.com/media/LMuSfE0WEUZXbMwZfX/giphy.gif?cid=ecf05e4759v4jekah96kspqvrcttbzaw7ii3zt7w8pnsn99w&rid=giphy.gif&ct=g');
+    background-size: cover;
+}
+#motivation:hover{
+    background-image: url('https://media1.giphy.com/media/3o6ZsYzuLyRfSGX4f6/giphy.gif?cid=ecf05e47pg4rongiflak6tfew4njubtvib9uwz3ldd4xafad&rid=giphy.gif&ct=g');
+    background-size: cover;
+}
+
+
+@media(min-width:600px){
+    
+    .gift-img{
+        width:50%;
+        height: 60%;
+        
+    }
+    #photo{
+        width:200px;
+        height: 200px;
+    }
+    body{
+        font-size: 1.5em;;
+    }
+    #gift-img-cheers{
+        height: 40%;
+        
+    }
+  
+}
+ 
